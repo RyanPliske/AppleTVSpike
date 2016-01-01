@@ -8,18 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F906A20D1C36DDDE005ACDFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */; };
-		F906A20F1C36DDDE005ACDFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A20E1C36DDDE005ACDFA /* ViewController.swift */; };
-		F906A2121C36DDDE005ACDFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F906A2101C36DDDE005ACDFA /* Main.storyboard */; };
 		F906A2141C36DDDE005ACDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F906A2131C36DDDE005ACDFA /* Assets.xcassets */; };
+		F906A21C1C36E0BF005ACDFA /* MyTVApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A21B1C36E0BF005ACDFA /* MyTVApplicationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F906A2091C36DDDE005ACDFA /* AppleTVSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTVSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F906A20E1C36DDDE005ACDFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F906A2111C36DDDE005ACDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F906A2131C36DDDE005ACDFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F906A2151C36DDDE005ACDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F906A21B1C36E0BF005ACDFA /* MyTVApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTVApplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */,
-				F906A20E1C36DDDE005ACDFA /* ViewController.swift */,
-				F906A2101C36DDDE005ACDFA /* Main.storyboard */,
+				F906A21B1C36E0BF005ACDFA /* MyTVApplicationController.swift */,
 				F906A2131C36DDDE005ACDFA /* Assets.xcassets */,
 				F906A2151C36DDDE005ACDFA /* Info.plist */,
 			);
@@ -120,7 +117,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F906A2141C36DDDE005ACDFA /* Assets.xcassets in Resources */,
-				F906A2121C36DDDE005ACDFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,23 +127,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F906A20F1C36DDDE005ACDFA /* ViewController.swift in Sources */,
+				F906A21C1C36E0BF005ACDFA /* MyTVApplicationController.swift in Sources */,
 				F906A20D1C36DDDE005ACDFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F906A2101C36DDDE005ACDFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F906A2111C36DDDE005ACDFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F906A2161C36DDDE005ACDFA /* Debug */ = {
