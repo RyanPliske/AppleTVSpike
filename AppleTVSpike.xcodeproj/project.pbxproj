@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F906A20D1C36DDDE005ACDFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */; };
+		F906A20F1C36DDDE005ACDFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A20E1C36DDDE005ACDFA /* ViewController.swift */; };
+		F906A2121C36DDDE005ACDFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F906A2101C36DDDE005ACDFA /* Main.storyboard */; };
+		F906A2141C36DDDE005ACDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F906A2131C36DDDE005ACDFA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F906A2091C36DDDE005ACDFA /* AppleTVSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTVSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F906A20E1C36DDDE005ACDFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F906A2111C36DDDE005ACDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F906A2131C36DDDE005ACDFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F906A2151C36DDDE005ACDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F906A2061C36DDDE005ACDFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F906A2001C36DDDE005ACDFA = {
+			isa = PBXGroup;
+			children = (
+				F906A20B1C36DDDE005ACDFA /* AppleTVSpike */,
+				F906A20A1C36DDDE005ACDFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F906A20A1C36DDDE005ACDFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F906A2091C36DDDE005ACDFA /* AppleTVSpike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F906A20B1C36DDDE005ACDFA /* AppleTVSpike */ = {
+			isa = PBXGroup;
+			children = (
+				F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */,
+				F906A20E1C36DDDE005ACDFA /* ViewController.swift */,
+				F906A2101C36DDDE005ACDFA /* Main.storyboard */,
+				F906A2131C36DDDE005ACDFA /* Assets.xcassets */,
+				F906A2151C36DDDE005ACDFA /* Info.plist */,
+			);
+			path = AppleTVSpike;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F906A2081C36DDDE005ACDFA /* AppleTVSpike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F906A2181C36DDDE005ACDFA /* Build configuration list for PBXNativeTarget "AppleTVSpike" */;
+			buildPhases = (
+				F906A2051C36DDDE005ACDFA /* Sources */,
+				F906A2061C36DDDE005ACDFA /* Frameworks */,
+				F906A2071C36DDDE005ACDFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleTVSpike;
+			productName = AppleTVSpike;
+			productReference = F906A2091C36DDDE005ACDFA /* AppleTVSpike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F906A2011C36DDDE005ACDFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ryan Pliske";
+				TargetAttributes = {
+					F906A2081C36DDDE005ACDFA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F906A2041C36DDDE005ACDFA /* Build configuration list for PBXProject "AppleTVSpike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F906A2001C36DDDE005ACDFA;
+			productRefGroup = F906A20A1C36DDDE005ACDFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F906A2081C36DDDE005ACDFA /* AppleTVSpike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F906A2071C36DDDE005ACDFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F906A2141C36DDDE005ACDFA /* Assets.xcassets in Resources */,
+				F906A2121C36DDDE005ACDFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F906A2051C36DDDE005ACDFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F906A20F1C36DDDE005ACDFA /* ViewController.swift in Sources */,
+				F906A20D1C36DDDE005ACDFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F906A2101C36DDDE005ACDFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F906A2111C36DDDE005ACDFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F906A2161C36DDDE005ACDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		F906A2171C36DDDE005ACDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F906A2191C36DDDE005ACDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = AppleTVSpike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPliske.AppleTVSpike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F906A21A1C36DDDE005ACDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = AppleTVSpike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPliske.AppleTVSpike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F906A2041C36DDDE005ACDFA /* Build configuration list for PBXProject "AppleTVSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F906A2161C36DDDE005ACDFA /* Debug */,
+				F906A2171C36DDDE005ACDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F906A2181C36DDDE005ACDFA /* Build configuration list for PBXNativeTarget "AppleTVSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F906A2191C36DDDE005ACDFA /* Debug */,
+				F906A21A1C36DDDE005ACDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F906A2011C36DDDE005ACDFA /* Project object */;
+}
