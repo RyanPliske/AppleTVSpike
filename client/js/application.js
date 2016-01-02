@@ -11,18 +11,24 @@
 
 "use strict";
 
+var resourceLoader;
+
 App.onLaunch = function(options) {
-  var javascriptFiles = [`${options.BASEURL}js/Presenter.js`];
-  var completion = function(success) {
+  var javascriptFiles = [`${options.BASEURL}js/Presenter.js`, `${options.BASEURL}js/ResourceLoader.js`];
+  var evaluationCompletion = function(success) {
     if(success) {
-        var alert = createAlert("Hello World!", "");
-        Presenter.modalDialogPresenter(alert);
+        resourceLoader = new ResourceLoader(options.BASEURL);
+        var loadCompletion = function(resource) {
+            var doc = Presenter.makeDocument(resource);
+            Presenter.pushDocument(doc);
+        }
+        resourceLoader.loadResource(`${options.BASEURL}templates/RWDevConTemplate.xml.js`, loadCompletion);
     } else {
         var alert = createAlert("Something Went Wrong On Our Server.", "Error attempting to evaluate external JavaScript files.");
         navigationDocument.presentModal(alert);
     }
   }
-  evaluateScripts(javascriptFiles, completion);
+  evaluateScripts(javascriptFiles, evaluationCompletion);
 }
 
 /**
@@ -40,12 +46,12 @@ var createAlert = function(title, description) {
                 <text>OK</text>
             </button>
           </alertTemplate>
-        </document>`
+        </document>`;
 
     // DomParser converts TVML string to TVML document (popup Window)
     var parser = new DOMParser();
 
     var alertDoc = parser.parseFromString(alertString, "application/xml");
 
-    return alertDoc
-}
+    return alertDoc;
+};
