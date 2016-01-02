@@ -2,6 +2,7 @@
     Ryan Pliske
     Client-Server Code for My AppleTVSpike
     To start the server you'll run this command in my 'client' folder:
+    Warning: You seriously need to be in the client directory when you run this command.
     python -m SimpleHTTPServer 9001
 
     navigationDocument is part of TVJS: https://developer.apple.com/library/tvos/documentation/TVMLJS/Reference/TVJSFrameworkReference/
