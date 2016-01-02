@@ -17,8 +17,8 @@ App.onLaunch = function(options) {
         var alert = createAlert("Hello World!", "");
         Presenter.modalDialogPresenter(alert);
     } else {
-        var alert = createAlert("Something Went Wrong.", "");
-        Presenter.modalDialogPresenter(alert);
+        var alert = createAlert("Something Went Wrong On Our Server.", "Error attempting to evaluate external JavaScript files.");
+        navigationDocument.presentModal(alert);
     }
   }
   evaluateScripts(javascriptFiles, completion);
@@ -41,6 +41,7 @@ var createAlert = function(title, description) {
           </alertTemplate>
         </document>`
 
+    // DomParser converts TVML string to TVML document (popup Window)
     var parser = new DOMParser();
 
     var alertDoc = parser.parseFromString(alertString, "application/xml");
