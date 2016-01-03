@@ -31,10 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         }
         jsContext.objectForKeyedSubscript("console").setObject(unsafeBitCast(logFunction, AnyObject.self), forKeyedSubscript:"print")
     }
-    
-    func appController(appController: TVApplicationController, didStopWithOptions options: [String: AnyObject]?) {
-        print("\(__FUNCTION__) invoked with options: \(options)")
-    }
 
 }
 
