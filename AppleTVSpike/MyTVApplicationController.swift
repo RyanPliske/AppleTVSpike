@@ -20,6 +20,8 @@ class MyTVApplicationController: TVApplicationController {
         setupGameStartedListener()
     }
     
+    // This creates a function in the javascript context called "gameStarted".
+    // Calling gameStarted(str) in javascript will call the log block.
     private func setupGameStartedListener() {
         let gameStarted: GameStarted = {
             (evaluation: JSContext) -> Void in
@@ -27,8 +29,6 @@ class MyTVApplicationController: TVApplicationController {
                 (str : String) -> Void in
                 print(str)
             }
-            //this creates a function in the javascript context called "GameStarted".
-            //calling GameStarted(str) in javascript will call the block we created above.
             evaluation.setObject(unsafeBitCast(log, AnyObject.self), forKeyedSubscript: "gameStarted")
         }
         self.evaluateInJavaScriptContext(gameStarted, completion: nil)
