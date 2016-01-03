@@ -23,15 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         let alertController = UIAlertController(title: title, message: message, preferredStyle:.Alert)
         self.appController?.navigationController.presentViewController(alertController, animated: true, completion: nil)
     }
-    
-    func appController(appController: TVApplicationController, evaluateAppJavaScriptInContext jsContext: JSContext) {
-        jsContext.evaluateScript("var console = {log: function() { var message = ''; for(var i = 0; i < arguments.length; i++) { message += arguments[i] + ' ' }; console.print(message) } };")
-        let logFunction: LogBlock = {
-            (message: String) -> Void in
-            print("JS: \(message)")
-        }
-        jsContext.objectForKeyedSubscript("console").setObject(unsafeBitCast(logFunction, AnyObject.self), forKeyedSubscript:"print")
-    }
 
 }
 
