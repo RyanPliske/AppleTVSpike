@@ -24,7 +24,7 @@ App.onLaunch = function(options) {
             Presenter.pushDocument(doc);
         }
         resourceLoader.loadResource(`${options.BASEURL}templates/RWDevConTemplate.xml.js`, loadCompletion);
-        swiftPrint(`OHBOY`);
+        gameStarted(`Game Was Started!`);
     } else {
         var alert = createAlert("Something Went Wrong On Our Server.", "Error attempting to evaluate external JavaScript files.");
         navigationDocument.presentModal(alert);

@@ -10,7 +10,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         appController = MyTVApplicationController(window: window, delegate: self)
-        createSwiftPrint()
         return true
     }
     
@@ -35,24 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     
     func appController(appController: TVApplicationController, didStopWithOptions options: [String: AnyObject]?) {
         print("\(__FUNCTION__) invoked with options: \(options)")
-    }
-    
-    private func createSwiftPrint(){
-        
-        appController?.evaluateInJavaScriptContext({(evaluation: JSContext) -> Void in
-            
-            //this is the block that will be called when javascript calls swiftPrint(str)
-            let swiftPrintBlock : @convention(block) (String) -> Void = {
-                (str : String) -> Void in
-                print(str)
-            }
-            
-            //this creates a function in the javascript context called "swiftPrint".
-            //calling swiftPrint(str) in javascript will call the block we created above.
-            evaluation.setObject(unsafeBitCast(swiftPrintBlock, AnyObject.self), forKeyedSubscript: "swiftPrint")
-            }, completion: {(Bool) -> Void in
-                //evaluation block finished running
-        })
     }
 
 }
