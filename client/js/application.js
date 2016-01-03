@@ -25,6 +25,7 @@ App.onLaunch = function(options) {
         }
         resourceLoader.loadResource(`${options.BASEURL}templates/RWDevConTemplate.xml.js`, loadCompletion);
         gameStarted(`Game Was Started!`);
+        console.log(`Some Stuff`);
     } else {
         var alert = createAlert("Something Went Wrong On Our Server.", "Error attempting to evaluate external JavaScript files.");
         navigationDocument.presentModal(alert);

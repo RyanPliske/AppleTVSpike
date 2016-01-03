@@ -26,7 +26,7 @@ class MyTVApplicationController: TVApplicationController {
         let gameStarted: GameStarted = {
             (evaluation: JSContext) -> Void in
             let log: LogBlock = {
-                (str : String) -> Void in
+                (str: String) -> Void in
                 print(str)
             }
             evaluation.setObject(unsafeBitCast(log, AnyObject.self), forKeyedSubscript: "gameStarted")

@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     
     func appController(appController: TVApplicationController, evaluateAppJavaScriptInContext jsContext: JSContext) {
         jsContext.evaluateScript("var console = {log: function() { var message = ''; for(var i = 0; i < arguments.length; i++) { message += arguments[i] + ' ' }; console.print(message) } };")
-        let logFunction: @convention(block) (NSString!) -> Void = { (message:NSString!) in
+        let logFunction: LogBlock = {
+            (message: String) -> Void in
             print("JS: \(message)")
         }
         jsContext.objectForKeyedSubscript("console").setObject(unsafeBitCast(logFunction, AnyObject.self), forKeyedSubscript:"print")
