@@ -2,11 +2,11 @@ import TVMLKit
 
 class MyTVApp: NSObject, TVApplicationControllerDelegate {
     
-    var appController: MyTVApplicationController
+    var appController: MyTVApplicationController!
     
-    init(tvAppController: MyTVApplicationController) {
-        appController = tvAppController
+    init(window: UIWindow) {
         super.init()
+        appController = MyTVApplicationController(window: window, delegate: self)
     }
     
     func appController(appController: TVApplicationController, didFailWithError error: NSError) {
