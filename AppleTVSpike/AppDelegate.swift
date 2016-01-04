@@ -16,11 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     // MARK: TVApplicationControllerDelegate
     
     func appController(appController: TVApplicationController, didFailWithError error: NSError) {
-        print("\(__FUNCTION__) invoked with error: \(error)")
-        
-        let title = "Error Launching Application"
-        let message = error.localizedDescription
-        let alertController = UIAlertController(title: title, message: message, preferredStyle:.Alert)
+        let alertController = UIAlertController(title: "Error Launching Application", message: error.localizedDescription, preferredStyle:.Alert)
         self.appController?.navigationController.presentViewController(alertController, animated: true, completion: nil)
     }
 
