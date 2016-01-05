@@ -1,6 +1,6 @@
 import TVMLKit
 
-protocol MyTVAppControllerDelegate: TVApplicationControllerDelegate {
+protocol MyTVAppControllerDelegate: class, TVApplicationControllerDelegate {
     
     func gameDidStartWithMessage(message: String)
     
