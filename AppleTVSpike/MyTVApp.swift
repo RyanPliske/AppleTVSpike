@@ -21,6 +21,9 @@ class MyTVApp: NSObject, MyTVAppControllerDelegate {
     
     func gameDidStartWithMessage(message: String) {
         print(message)
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = UIColor.blueColor()
+        self.appController.navigationController.presentViewController(viewController, animated: true, completion: nil)
     }
     
 }
