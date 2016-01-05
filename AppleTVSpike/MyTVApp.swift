@@ -14,6 +14,11 @@ class MyTVApp: NSObject, MyTVAppControllerDelegate {
         self.appController.navigationController.presentViewController(alertController, animated: true, completion: nil)
     }
     
+    func appController(appController: TVApplicationController, didFinishLaunchingWithOptions options: [String : AnyObject]?) {
+        self.appController.setupGameStartedListener()
+        self.appController.setupJavaScriptConsoleLog()
+    }
+    
     func gameDidStartWithMessage(message: String) {
         print(message)
     }
