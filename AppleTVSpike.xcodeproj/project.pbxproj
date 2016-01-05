@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		F906A20D1C36DDDE005ACDFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */; };
 		F906A2141C36DDDE005ACDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F906A2131C36DDDE005ACDFA /* Assets.xcassets */; };
-		F906A21C1C36E0BF005ACDFA /* MyTVApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A21B1C36E0BF005ACDFA /* MyTVApplicationController.swift */; };
+		F906A21C1C36E0BF005ACDFA /* MyTVAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A21B1C36E0BF005ACDFA /* MyTVAppController.swift */; };
 		F918C4C11C3B3A240075DB0C /* MyTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918C4C01C3B3A240075DB0C /* MyTVApp.swift */; };
+		F918C4C31C3B3D490075DB0C /* MyTVAppControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918C4C21C3B3D490075DB0C /* MyTVAppControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +19,9 @@
 		F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F906A2131C36DDDE005ACDFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F906A2151C36DDDE005ACDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F906A21B1C36E0BF005ACDFA /* MyTVApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTVApplicationController.swift; sourceTree = "<group>"; };
+		F906A21B1C36E0BF005ACDFA /* MyTVAppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTVAppController.swift; sourceTree = "<group>"; };
 		F918C4C01C3B3A240075DB0C /* MyTVApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTVApp.swift; sourceTree = "<group>"; };
+		F918C4C21C3B3D490075DB0C /* MyTVAppControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTVAppControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,8 @@
 			children = (
 				F906A20C1C36DDDE005ACDFA /* AppDelegate.swift */,
 				F918C4C01C3B3A240075DB0C /* MyTVApp.swift */,
-				F906A21B1C36E0BF005ACDFA /* MyTVApplicationController.swift */,
+				F906A21B1C36E0BF005ACDFA /* MyTVAppController.swift */,
+				F918C4C21C3B3D490075DB0C /* MyTVAppControllerDelegate.swift */,
 				F906A2131C36DDDE005ACDFA /* Assets.xcassets */,
 				F906A2151C36DDDE005ACDFA /* Info.plist */,
 			);
@@ -130,9 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F906A21C1C36E0BF005ACDFA /* MyTVApplicationController.swift in Sources */,
+				F906A21C1C36E0BF005ACDFA /* MyTVAppController.swift in Sources */,
 				F906A20D1C36DDDE005ACDFA /* AppDelegate.swift in Sources */,
 				F918C4C11C3B3A240075DB0C /* MyTVApp.swift in Sources */,
+				F918C4C31C3B3D490075DB0C /* MyTVAppControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
